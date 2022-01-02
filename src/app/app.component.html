@@ -17,7 +17,12 @@
   bdColor="rgba(51,51,51,0.8)"
   size="medium"
   color="#fff"
-  type="ball-scale-multiple"
+  type="ball-fall"
 >
   <p style="font-size: 20px; color: white">Loading...</p>
 </ngx-spinner>
+
+<!--This message will show when there are no more post to load-->
+<div *ngIf="!notEmptyPost">
+  <p>No more item to show</p>
+</div>
